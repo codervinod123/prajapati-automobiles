@@ -1,20 +1,52 @@
 import React from 'react'
+import logo from "../assets/logo.jpg"
+import { PiUserCircleThin } from "react-icons/pi"
+
 
 const Header = () => {
   return (
-    <div className='flex justify-between'>
-        <div>
-          <img src="./asset/logo.jpg" alt="logo" />
+    <nav>
+      <div className='flex justify-between items-center bg-white px-4 py-2 h-[4.7rem] shadow-lg'>
+
+        <div className='flex items-center justify-between w-[50%]'>
+          <div>
+            <img width={"300px"} src={logo} alt="logo" title='logo' />
+          </div>
+
+          <div className=''>
+            <input
+              type="text"
+              placeholder='Search Cars'
+              className='border-2 border-gray-300 rounded-full px-4 py-1 focus:outline-none'
+            />
+          </div>
         </div>
 
-        <div>
-          <h1>Hello</h1>
+
+
+        <div className='flex justify-between items-center gap-6'>
+
+          <div className=''>
+            <ul className='flex gap-6 font-bold text-gray-600'>
+              <li>Buy Car</li>
+              <li>Sell Car</li>
+              <li>Finance</li>
+              <li>Contact us</li>
+              <li>Wishlists</li>
+            </ul>
+          </div>
+
+          <div className=''>
+            <PiUserCircleThin
+              size={"2rem"}
+            />
+          </div>
+
         </div>
 
-        <div>
-          <h1>Hello</h1>
-        </div>
-    </div>
+
+      </div>
+    </nav>
   )
 }
 
