@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-import { CAR_API } from '../utils/config'
 import Cardcontainer from './Cardcontainer';
 
-const MainContainer = () => {
+const Stocks = () => {
 
   
 
@@ -15,4 +14,4 @@ const MainContainer = () => {
   )
 }
 
-export default MainContainer
+export default Stocks

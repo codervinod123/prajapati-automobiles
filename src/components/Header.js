@@ -13,13 +13,13 @@ const Header = () => {
             <img width={"300px"} src={logo} alt="logo" title='logo' />
           </div>
 
-          <div className=''>
+          {/* <div className=''>
             <input
               type="text"
               placeholder='Search Cars'
               className='border-2 border-gray-300 rounded-full px-4 py-1 focus:outline-none'
             />
-          </div>
+          </div> */}
         </div>
 
 
@@ -31,8 +31,9 @@ const Header = () => {
               <li>Buy Car</li>
               <li>Sell Car</li>
               <li>Finance</li>
+              <li>Stocks</li>
               <li>Contact us</li>
-              <li>Wishlists</li>
+              <li>Happy Customers</li>
             </ul>
           </div>
 
