@@ -21,11 +21,11 @@ const Cardcontainer = () => {
          } 
    }
 
-  return (
+       return (
               <div className='w-full grid grid-cols-3 gap-4'>
                  <Card data={carData[0]}/>
              </div>
-  )
+         )
 }
 
 export default Cardcontainer
