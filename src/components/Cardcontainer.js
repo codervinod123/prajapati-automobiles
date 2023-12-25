@@ -22,8 +22,14 @@ const Cardcontainer = () => {
    }
 
        return (
-              <div className='w-full grid grid-cols-3 gap-4'>
-                 <Card data={carData[0]}/>
+              <div className='w-full grid grid-cols-3 gap-x-4 gap-y-8'>
+                 {
+                    carData.map((carData)=>{
+                        return(
+                               <Card key={carData.id} data={carData}/>
+                        )
+                    })
+                 }
              </div>
          )
 }
