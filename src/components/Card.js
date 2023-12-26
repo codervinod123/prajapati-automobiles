@@ -7,8 +7,8 @@ const Card = ({ data }) => {
 
   
 
-  return (
-    data && <div className='shadow-sm rounded-t-md cursor-pointer'>
+  return  (
+     <div className='shadow-sm rounded-t-md cursor-pointer'>
         <div className=''>
           <img className='bg-gray-400 rounded-t-md' src={data.without_bg_image.file.absurl} alt="" />
         </div>

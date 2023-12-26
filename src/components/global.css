@@ -1,0 +1,20 @@
+.skeleton{
+    opacity: .7;
+    animation: skelton-loading 1s linear infinite alternate;
+ }
+ 
+ 
+ 
+ @keyframes skelton-loading{
+     0%{
+         background: hsl(200, 20%, 70%);
+     }
+     100%{
+         background: hsl(200, 20%, 95%);
+     }
+ }
+ 
+ 
+ .fixedbar{
+     position: sticky;
+ }
