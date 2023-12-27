@@ -13,7 +13,8 @@ import Home from './components/Home'
 import Stocks from './components/Stocks'
 import ContactUs from './components/ContactUs'
 
-
+import { Provider } from 'react-redux'
+import store from './store/store'
 
 const appRouter=createBrowserRouter([
   {
@@ -58,11 +59,13 @@ const appRouter=createBrowserRouter([
 
 const App = () => {
   return (
+    <Provider store={store}>
     <div>
       <Header />
        <RouterProvider router={appRouter}/>
       <Footer />
     </div>
+    </Provider>
   )
 }
 

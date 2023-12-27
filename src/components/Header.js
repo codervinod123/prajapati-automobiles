@@ -3,8 +3,21 @@ import logo from "../assets/logo.jpg"
 import { PiUserCircleThin } from "react-icons/pi"
 import { Link } from 'react-router-dom'
 
+import { useSelector } from 'react-redux'
+import { themeToggler } from '../store/themeSlice'
+import { useDispatch } from 'react-redux'
 
 const Header = () => {
+
+    // redux configuration
+
+    const theme=useSelector((store)=>store.themeSlice);
+    console.log(theme);
+    const dispatch=useDispatch();
+    const handleClick=()=>{
+          dispatch(themeToggler());
+    }
+
   return (
     <nav>
       <div className='flex justify-between items-center bg-white px-4 py-2 h-[4.7rem] shadow-lg'>
@@ -13,6 +26,10 @@ const Header = () => {
           <div className='cursor-pointer'>
             <img width={"300px"} src={logo} alt="logo" title='logo' />
           </div>
+
+          <button onClick={()=>handleClick()}>
+             Click
+          </button>
 
           {/* <div className=''>
             <input
