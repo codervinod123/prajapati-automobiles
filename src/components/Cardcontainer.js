@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { CAR_API } from '../utils/config';
 import Card from './Card';
 import Shimmer from './Shimmer';
+import { useSelector } from 'react-redux';
 
 const Cardcontainer = () => {
 
@@ -10,6 +11,7 @@ const Cardcontainer = () => {
     useEffect(()=>{
         getApiData();
    },[])
+
  
    const getApiData=async()=>{
          try {
@@ -22,8 +24,12 @@ const Cardcontainer = () => {
          } 
    }
 
+//    redux toggler
+   
+
+
        return carData.length===0 ? <Shimmer/> :(
-              <div className='w-full grid grid-cols-3 gap-x-4 gap-y-8'>
+              <div className={`w-full grid grid-cols-3 gap-x-4 gap-y-8 `}>
                  {
                     carData.map((carData)=>{
                         return(
