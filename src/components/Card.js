@@ -8,7 +8,7 @@ const Card = ({ data }) => {
   
 
   return  (
-     <div className='shadow-sm rounded-t-md cursor-pointer'>
+     <div className='shadow-sm rounded-t-md cursor-pointer border'>
         <div className=''>
           <img className='bg-gray-400 rounded-t-md' src={data.without_bg_image.file.absurl} alt="" />
         </div>
@@ -34,9 +34,9 @@ const Card = ({ data }) => {
             <span className='text-[12px] flex items-center'><LiaRupeeSignSolid/>From {data.emi}/Month</span>
           </h3>
 
-          <div className='h-[1px] bg-gray-400 w-full'></div>
+          <div className='h-[0.5px] bg-gray-300 w-full'></div>
 
-          <h4 className='flex text-[14px] items-center  text-purple-950'><span><CiHeart size={"1.2rem"} /></span>{data.shortlist_count} Shortlisted this car</h4>
+          <h4 className='flex text-[14px] items-center  text-purple-950 pb-2'><span><CiHeart size={"1.2rem"} /></span>{data.shortlist_count} Shortlisted this car</h4>
 
         </div>
          

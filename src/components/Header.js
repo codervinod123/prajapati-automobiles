@@ -9,8 +9,8 @@ const Header = () => {
     <nav>
       <div className='flex justify-between items-center bg-white px-4 py-2 h-[4.7rem] shadow-lg'>
 
-        <div className='flex items-center justify-between w-[50%]'>
-          <div>
+        <div className='flex items-center justify-between w-[40%]'>
+          <div className='cursor-pointer'>
             <img width={"300px"} src={logo} alt="logo" title='logo' />
           </div>
 
@@ -31,10 +31,16 @@ const Header = () => {
             <ul className='flex gap-6 font-bold text-gray-600'>
               <li>Buy Car</li>
               <li>Sell Car</li>
-              <li>Finance</li>
+              <li>
+                Finance
+                {/* <Link to="/finance">Finance</Link> */}
+              </li>
               <li>Stocks</li>
               <li>Contact us</li>
               <li>Happy Customers</li>
+           
+              
+              
             </ul>
           </div>
 
