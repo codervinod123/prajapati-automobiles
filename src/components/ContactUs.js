@@ -3,12 +3,13 @@ import { IoHome } from "react-icons/io5";
 import { LuLandmark } from "react-icons/lu";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import ContactForm from './ContactForm';
 
 const ContactUs = () => {
   return (
-    <div className='grid grid-cols-2 gap-x-2 my-8 mx-auto w-full max-w-[1080px]'>
+    <div className='grid grid-cols-2 gap-x-2 my-8 mx-auto w-full max-w-[1080px] min-h-[400px]'>
          
-          <div className='px-2'>
+          <div className='px-2 bg-slate-400'>
               <h1 className='text-xl font-semibold text-gray-700 pb-6'>Contact Us</h1>
               <h1 className='text-xl font-semibold text-gray-700 pb-6 uppercase'>Prajapati Automobiles</h1>
 
@@ -37,8 +38,8 @@ const ContactUs = () => {
 
           </div>
 
-          <div className=''>
-
+          <div className='px-2 bg-slate-400'>
+               <ContactForm/>
           </div>
 
     </div>
