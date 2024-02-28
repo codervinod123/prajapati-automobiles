@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import logo from "../assets/logo.jpg"
-import { PiUserCircleThin } from "react-icons/pi"
+// import { PiUserCircleThin } from "react-icons/pi"
 import { Link } from 'react-router-dom'
 
 import { useSelector } from 'react-redux'
@@ -31,21 +31,11 @@ const Header = () => {
       <div className={`flex justify-between items-center px-4 py-2 h-[4.7rem] shadow-lg  ${theme?"bg-white":"bg-gray-900"} transition-all duration-500`}>
 
         <div className='flex items-center justify-between w-[40%]'>
-          <div className='cursor-pointer'>
-            <img width={"300px"} src={logo} alt="logo" title='logo' />
-          </div>
-
-          
-          
-        
-
-          {/* <div className=''>
-            <input
-              type="text"
-              placeholder='Search Cars'
-              className='border-2 border-gray-300 rounded-full px-4 py-1 focus:outline-none'
-            />
-          </div> */}
+         <Link to="/">
+           <div className='cursor-pointer'>
+             <img width={"300px"} src={logo} alt="logo" title='logo' />
+            </div>
+         </Link>
         </div>
 
 
@@ -54,27 +44,26 @@ const Header = () => {
 
           <div className=''>
             <ul className={`flex gap-6 font-bold ${theme?"text-gray-600":"text-gray-200"}`}>
-              <li>Buy Car</li>
-              <li>Sell Car</li>
               <li>
-                Finance
-                {/* <Link to="/finance">Finance</Link> */}
+                 <Link to="/stocks">Buy Car</Link>
               </li>
-              <li>Stocks</li>
-              <li>Contact us</li>
-              <li>Happy Customers</li>
-           
-              
-              
+              <li> 
+                  <Link to="/sellcars">Sell Cars</Link>
+              </li> 
+
+              <li>
+                 <Link to="/contact">Contact Us</Link>
+              </li> 
+
+              <li>
+                 <Link to="/about">About Us</Link>
+              </li> 
+
+              <li>
+                 <Link to="/happy-customers">Happy Customers</Link>
+              </li>  
             </ul>
           </div>
-
-          {/* <div className=''>
-            <PiUserCircleThin
-              size={"2rem"}
-              className={`${theme?"text-gray-600":"text-gray-200"}`}
-            />
-          </div> */}
 
 
           <div onClick={()=>handleClick()} className='p-2 pl-2 cursor-pointer hover:bg-gray-200 rounded-full'>

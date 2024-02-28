@@ -1,7 +1,7 @@
 import React from 'react'
-import MainContainer from './Stocks'
+// import MainContainer from './Stocks'
 import { Outlet } from 'react-router-dom'
-import Home from './Home'
+// import Home from './Home'
 
 const Body = () => {
   return (

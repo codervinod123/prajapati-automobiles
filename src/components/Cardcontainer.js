@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { CAR_API } from '../utils/config';
 import Card from './Card';
 import Shimmer from './Shimmer';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 const Cardcontainer = () => {
 
