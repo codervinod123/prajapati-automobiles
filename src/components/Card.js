@@ -10,7 +10,7 @@ const Card = ({ data }) => {
   return  (
      <div className='shadow-sm rounded-t-md cursor-pointer border hover:scale-105 transition-all duration-500 mx-2 my-8'>
         <div className=''>
-          <img className='bg-gray-400 rounded-t-md' src={data.without_bg_image.file.absurl} alt="" />
+          <img className='bg-gray-400 rounded-t-md' src={data.without_bg_image.file.absurl} alt={data.variant} />
         </div>
 
         <div className='flex flex-col gap-2 px-2 pt-2'>

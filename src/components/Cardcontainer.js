@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { CAR_API } from '../utils/config';
 import Card from './Card';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 // import { useSelector } from 'react-redux';
 
 const Cardcontainer = () => {
@@ -33,7 +34,9 @@ const Cardcontainer = () => {
                  {
                     carData.map((carData)=>{
                         return(
-                               <Card key={carData.id} data={carData}/>
+                           <Link key={carData.id} to={`/vehicle-details/${carData.id}`}>
+                               <Card  data={carData}/>
+                           </Link>  
                         )
                     })
                  }

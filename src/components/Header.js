@@ -44,24 +44,34 @@ const Header = () => {
 
           <div className=''>
             <ul className={`flex gap-6 font-bold ${theme?"text-gray-600":"text-gray-200"}`}>
-              <li>
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
                  <Link to="/stocks">Buy Car</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block"></div>            
               </li>
-              <li> 
-                  <Link to="/sellcars">Sell Cars</Link>
-              </li> 
 
-              <li>
-                 <Link to="/contact">Contact Us</Link>
-              </li> 
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
+                <Link to="/sellcars">Sell Cars</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block"></div>            
+              </li>
 
-              <li>
-                 <Link to="/about">About Us</Link>
-              </li> 
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
+                <Link to="/contact">Contact Us</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block"></div>            
+              </li>
+        
+             
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
+                 <Link to="/happy-customers">Reviews</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block "></div>            
+              </li>
 
-              <li>
-                 <Link to="/happy-customers">Happy Customers</Link>
-              </li>  
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
+                 <Link to="/gallery">Images</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block "></div>            
+              </li>
+      
+
+             
             </ul>
           </div>
 
