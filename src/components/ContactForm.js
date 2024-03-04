@@ -31,13 +31,13 @@ const ContactForm = () => (
     >
       {({ isSubmitting }) => (
         <Form className='flex flex-col gap-y-4 max-w-[60%]'>
-          <Field type="text" name="name" placeholder="Name" className="rounded px-4 py-1 placeholder:text-gray-900"/>
+          <Field type="text" name="name" placeholder="Name" className="rounded px-4 py-1 placeholder:text-gray-900 outline-none"/>
           <ErrorMessage name="name" component="div" />
 
-          <Field type="email" name="email" placeholder="Email" className="rounded px-4 py-1 placeholder:text-gray-900"/>
+          <Field type="email" name="email" placeholder="Email" className="rounded px-4 py-1 placeholder:text-gray-900 outline-none"/>
           <ErrorMessage name="email" component="div" />
 
-          <Field type="text" name="message" placeholder="Message" className="rounded px-4 py-1 placeholder:text-gray-900"/>
+          <Field type="text" name="message" placeholder="Message" className="rounded px-4 py-1 placeholder:text-gray-900 outline-none"/>
           <ErrorMessage name="message" component="div" />
 
           <button className='bg-blue-600 w-fit mx-auto  py-1 rounded font-semibold text-white relative pr-16 pl-4' type="submit" disabled={isSubmitting}>

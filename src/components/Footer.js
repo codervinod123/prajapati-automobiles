@@ -4,6 +4,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { RiInstagramFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import Logo from "../assets/logo.jpg"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,21 +16,31 @@ const Footer = () => {
               <div className=''> 
                   <ul className='flex gap-x-6'>
                       <li>
+                      <a target="_blank" href="https://www.facebook.com/prajapatiautomobiles?mibextid=ZbWKwL">
                         <IoLogoFacebook size={"1.5rem"} className='text-gray-700'/>
+                      </a>
                       </li>
                       <li>
+                      <a target="_blank" href="https://www.linkedin.com/company/prajapati-automobiles/">
                          <RiTwitterXFill size={"1.5rem"}  className='text-gray-700'/>
+                      </a>
                       </li>
                       <li>
+                      <a target="_blank" href="https://www.linkedin.com/company/prajapati-automobiles/">
                          <BiLogoLinkedinSquare size={"1.5rem"}  className='text-gray-700'/>
+                         </a>
                       </li>
                       <li>
+                      <a target="_blank" href="https://www.instagram.com/prajapati_automobiles?igshid=MmIzYWVlNDQ5Yg%3D%3D">
                          <RiInstagramFill size={"1.5rem"}  className='text-gray-700'/>
+                        </a>
                       </li>
                   </ul>
               </div>
               <div className='py-6'>
-                   <img className='w-[165px]' src={Logo}  alt="logo" />
+                   <Link to="/">
+                     <img className='w-[165px]' src={Logo}  alt="logo" />
+                   </Link>
               </div>
               <div className='bg-gray-600 h-[6px] w-[48%]'></div>
           </div>
@@ -37,13 +48,14 @@ const Footer = () => {
           <div className='px-2 w-full'>
               <h1 className='font-bold text-gray-700 pb-6'>USEFUL LINKS</h1>
               <div className=''> 
-                   <ul className='text-gray-600 '>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Contacts</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Happy Customers</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Reviews</li>
+              <ul className='text-gray-600 '>
+                      <Link to="/finance"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li></Link>
+                      <Link to="/buy-cars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li></Link>
+                      <Link to="/sellcars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li></Link>
+                      <Link to="/contact"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Contacts</li></Link>
+                      <Link to="/happy-customers"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Happy Customers</li></Link>
+                      <Link to="/about"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>About Us</li></Link>
+                      <Link to="/happy-customers"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Reviews</li></Link>
                    </ul>
               </div>
           </div>
@@ -52,12 +64,13 @@ const Footer = () => {
               <h1 className='font-bold text-gray-700 pb-6'>OUR SERVICES</h1>
               <div className=''> 
                    <ul className='text-gray-600 '>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Contacts</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Happy Customers</li>
-                      <li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Reviews</li>
+                      <Link to="/finance"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li></Link>
+                      <Link to="/buy-cars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li></Link>
+                      <Link to="/sellcars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li></Link>
+                      <Link to="/contact"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Contacts</li></Link>
+                      <Link to="/happy-customers"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Happy Customers</li></Link>
+                      <Link to="/about"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>About Us</li></Link>
+                      <Link to="/happy-customers"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Reviews</li></Link>
                    </ul>
               </div>
           </div>
