@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='bg-gray-300 py-8'>
-    <div className='w-full max-w-[1080px] grid grid-cols-3 mx-auto '>
+    <div className='w-full max-w-[1080px] grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1  mx-auto '>
           
           <div className='px-2 w-full'>
               <h1 className='font-bold text-gray-700 pb-6'>KEEP IN TOUCH</h1>
