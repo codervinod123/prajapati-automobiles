@@ -6,8 +6,8 @@ import { FaArrowRight } from "react-icons/fa6";
 const ContactForm = () => (
   <div>
      
-      <h1 className='text-xl font-semibold text-gray-700 pb-6'>Contact Us</h1>
-      <h1 className='text-xl font-semibold text-gray-700 pb-6 uppercase'>Prajapati Automobiles</h1>
+      <h1 className='text-xl font-semibold text-gray-900 pb-6'>Contact Us</h1>
+      <h1 className='text-xl font-semibold text-gray-900 pb-6 uppercase'>Prajapati Automobiles</h1>
 
     <Formik
       initialValues={{ email: '', password: '' }}

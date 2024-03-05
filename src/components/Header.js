@@ -75,24 +75,6 @@ const Header = () => {
             </ul>
           </div>
 
-
-          <div onClick={()=>handleClick()} className='p-2 pl-2 cursor-pointer hover:bg-gray-200 rounded-full'>
-                 {
-                  theme?
-                 <BsMoonFill
-                    size="1.5rem"
-                    className='text-black'
-                 />
-                 : 
-                 <CiSun
-                  size="1.5rem"
-                  className='text-yellow-600'
-                 />
-                 
-               
-                 }
-              </div>
-
         </div>
 
 

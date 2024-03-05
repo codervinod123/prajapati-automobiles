@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-300 py-8'>
-    <div className='w-full max-w-[1080px] grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1  mx-auto '>
+    <div className='bg-slate-400 py-8'>
+    <div className='w-full max-w-[1080px] grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 mx-auto '>
           
-          <div className='px-2 w-full'>
-              <h1 className='font-bold text-gray-700 pb-6'>KEEP IN TOUCH</h1>
+          <div className='px-2 w-full flex flex-col  items-center'>
+              <h1 className='font-bold text-gray-900 pb-6'>KEEP IN TOUCH</h1>
               <div className=''> 
                   <ul className='flex gap-x-6'>
                       <li>
@@ -45,10 +45,10 @@ const Footer = () => {
               <div className='bg-gray-600 h-[6px] w-[48%]'></div>
           </div>
 
-          <div className='px-2 w-full'>
-              <h1 className='font-bold text-gray-700 pb-6'>USEFUL LINKS</h1>
+          <div className='px-2 w-full flex flex-col justify-center items-center'>
+              <h1 className='font-bold text-gray-900 pb-6'>USEFUL LINKS</h1>
               <div className=''> 
-              <ul className='text-gray-600 '>
+              <ul className='text-gray-900 '>
                       <Link to="/finance"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li></Link>
                       <Link to="/buy-cars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li></Link>
                       <Link to="/sellcars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li></Link>
@@ -60,10 +60,10 @@ const Footer = () => {
               </div>
           </div>
 
-          <div className='px-2 w-full'>
-              <h1 className='font-bold text-gray-700 pb-6'>OUR SERVICES</h1>
+          <div className='px-2 w-full flex flex-col justify-center items-center'>
+              <h1 className='font-bold text-gray-900 pb-6'>OUR SERVICES</h1>
               <div className=''> 
-                   <ul className='text-gray-600 '>
+                   <ul className='text-gray-900 '>
                       <Link to="/finance"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li></Link>
                       <Link to="/buy-cars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Buy Cars</li></Link>
                       <Link to="/sellcars"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Sell Cars</li></Link>

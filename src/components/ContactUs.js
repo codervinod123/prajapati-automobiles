@@ -10,8 +10,8 @@ const ContactUs = () => {
     <div className='xl:grid xl:grid-cols-2 xl:gap-x-2 lg:grid lg:grid-cols-2 lg:gap-x-2  md:grid md:grid-cols-2 md:gap-y-4 sm:flex sm:flex-col sm:gap-y-4 flex flex-col gap-y-4 my-8 mx-auto w-full max-w-[1080px] min-h-[400px]'>
          
           <div className='px-4 py-4 bg-slate-400 rounded'>
-              <h1 className='text-xl font-semibold text-gray-700 pb-6'>Contact Us</h1>
-              <h1 className='text-xl font-semibold text-gray-700 pb-6 uppercase'>Prajapati Automobiles</h1>
+              <h1 className='text-xl font-semibold text-gray-900 pb-6'>Contact Us</h1>
+              <h1 className='text-xl font-semibold text-gray-900 pb-6 uppercase'>Prajapati Automobiles</h1>
 
               <div className='max-w-[60%] flex flex-col gap-y-4'>
                  <div className='flex items-center gap-x-4'>
