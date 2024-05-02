@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
           <div className='px-2 w-full flex flex-col justify-center'>
-              <h1 className='font-bold text-gray-900 pb-6'>OUR SERVICES</h1>
+              <h1 className='font-bold text-gray-900 py-6'>OUR SERVICES</h1>
               <div className=''> 
               <ul className='text-gray-900 '>
                       <Link to="/finance"><li className='cursor-pointer hover:text-gray-900 transition-all duration-300 w-fit'>Finance Service</li></Link>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           <div className='px-2 w-full flex flex-col justify-center'>
-              <h1 className='font-bold text-gray-900 pb-6'>USEFUL LINKS</h1>
+              <h1 className='font-bold text-gray-900 py-6'>USEFUL LINKS</h1>
               <div className=''> 
                    <ul className='text-gray-900 '>
                       
