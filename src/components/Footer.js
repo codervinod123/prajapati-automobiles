@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-slate-400 py-8  max-w-[1080px] mx-auto'>
+    <div className='bg-slate-400 py-8  max-w-[1080px] mx-auto rounded'>
     <div className='w-full grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 mx-auto '>
           
           <div className='px-2 w-full flex flex-col'>
