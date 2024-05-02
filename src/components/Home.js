@@ -40,7 +40,18 @@ const Home = () => {
                 <p className='max-w-[40%] text-gray-900 text-[18px]'>Welcome to Prajapati Automobiles, your trusted destination for quality, reliability, and unparalleled customer service in the realm of pre-owned automobiles in India. Established with a passion for connecting discerning buyers with exceptional vehicles, we take pride in being your go-to used car dealership.</p>
                 <img width={"300px"} src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/42355/xuv700-exterior-front-view-2.jpeg?isig=0&q=80" alt="owner_image" />
             </div>
+            
+            <div className='flex justify-center'> 
+             <button className='uppercasr bg-green-700 text-white font-semibold px-2 py-1'>
+                <Link to="/about"> 
+                  Know More
+                </Link>
+             </button>
+            </div>
+
         </div>
+
+        
 
     </div>
   )

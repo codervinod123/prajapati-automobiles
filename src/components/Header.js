@@ -59,6 +59,11 @@ const Header = () => {
                  <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block"></div>            
               </li>
         
+              <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
+                 <Link to="/about">About Us</Link>
+                 <div class="absolute w-full h-1 bottom-2 bg-[#f15701] hidden transition-all duration-500 group-hover:block "></div>            
+              </li>
+      
              
               <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
                  <Link to="/happy-customers">Reviews</Link>
