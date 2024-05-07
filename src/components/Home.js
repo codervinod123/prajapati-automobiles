@@ -36,7 +36,7 @@ const Home = () => {
            <button > <GrNext size={"1.2rem"}/> </button>
         </div> */}
 
-        <div className='bg-gray-400 py-4 rounded'>
+        <div className='bg-gray-400 py-4 rounded px-2'>
             <h1 className="flex justify-center uppercase text-[22px] font-bold text-gray-900">Welcome to prajapati automobiles</h1>
             
             <div className='flex flex-col justify-center items-center gap-y-6 gap-x-8 py-8 lg:flex-row md:flex-row'>

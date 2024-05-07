@@ -8,6 +8,7 @@ import { themeToggler } from '../store/themeSlice'
 import { useDispatch } from 'react-redux'
 import {BsMoonFill} from "react-icons/bs"
 import {CiSun} from "react-icons/ci"
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
 
@@ -41,8 +42,12 @@ const Header = () => {
 
 
         <div className='flex justify-between items-center gap-6'>
+         
+          <div className='h-[30px] w-[30px] bg-gray-300 items-center justify-center rounded-full flex lg:hidden sm:flex md:flex'>
+             <RxHamburgerMenu/>
+          </div>
 
-          <div className=''>
+          <div className='hidden xl:flex lg:flex md:hidden sm:hidden'>
             <ul className={`flex gap-6 font-bold ${theme?"text-gray-600":"text-gray-200"}`}>
               <li className='relative group text-black cursor-pointer py-7 transition-all duration-500'>
                  <Link to="/stocks">Buy Car</Link>
