@@ -43,7 +43,7 @@ const Header = () => {
 
         <div className='flex justify-between items-center gap-6'>
          
-          <div className='h-[30px] w-[30px] bg-gray-300 items-center justify-center rounded-full flex lg:hidden sm:flex md:flex'>
+          <div className='h-[30px] w-[30px] bg-gray-400 items-center justify-center rounded-full flex lg:hidden sm:flex md:flex'>
              <RxHamburgerMenu/>
           </div>
 
